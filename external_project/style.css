@@ -1,0 +1,232 @@
+/*
+Ellie Huong Truong
+ID: 7411263
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Philosopher&display=swap');
+
+/*
+font-family: 'Kalnia', serif;
+font-family: 'Philosopher', sans-serif;
+*/
+
+body {
+    font-family: 'Philosopher', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    background-color: #f69be8;
+}
+main h2 {
+    font-family: 'Kalnia', serif;
+    color: #ef04cc;
+}
+main h3 {
+    font-family: 'Kalnia', serif;
+    color: #003300;
+}
+main p {
+    font-family: 'Philosopher', sans-serif;
+}
+
+header {
+    font-family: 'Kalnia', serif;
+    background-color: white;
+    color: #003300;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-right p {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #003300;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f69be8;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav a:hover {
+    background-color: #003300;
+    color: #f69be8;
+    font-style: italic;
+}
+
+main {
+    flex: 1;
+}
+
+/* Flex container for the main section */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Style for each box inside the main section */
+.main-box {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 10px;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #003300;
+    color: #f0d2e1;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    main img {
+        width: 100%;
+    }
+
+    .main-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background-color: #003300;
+        width: 100%;
+        text-align: center;
+        display: none;
+        padding: 20px;
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Media Query for large Desktop */
+@media screen and (min-width: 1000px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-box {
+        width: 100%;
+        margin: 5px;
+        padding: 10px;
+    }
+}
+
+.booking-form {
+    padding: 20px;
+}
+
+/* Adjustments for better form styling */
+.booking-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.booking-form button {
+    background-color: #f69be8;
+    color: #003300;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #003300;
+    color: #f69be8;
+    font-style: italic;
+}
